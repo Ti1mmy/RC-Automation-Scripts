@@ -1,0 +1,157 @@
+No-Requirement Poke Titles
+Poke Maniac - 25
+Poke Fan - 15
+Poke Kid - 15
+Collector - 30
+
+No-Requirement Symbols
+Purple Eighth Note - 25
+Cyan Eighth Note - 25
+Blue Eighth Note - 25
+Green Eighth Note - 25
+Yellow Eighth Note - 25
+Orange Eighth Note - 25
+
+Blue Four Pointed Star - 25
+Green Four Pointed Star - 25
+Orange Four Pointed Star - 25
+Yellow Four Pointed Star - 25
+Purple Four Pointed Star - 25
+Red Four Pointed Star - 25
+
+No-Requirement Battle Titles
+Rogue - 25
+Duelist - 25
+Hero - 35
+Leader - 40
+Gladiator - 45
+Great Hero - 50
+Lieutenant - 55
+Rival - 35
+Newbie - 25
+Soldier - 25
+Sergeant - 30
+
+No-Requirement Silly Titles
+Noob - 50
+Moving Target - 35
+Meme Lord - 50 
+Soontm - 50
+Beginner - 15
+Trained - 15
+Young Un" - 25
+
+Requirement RC-Titles:
+RC-Adept - 10
+RC-Beginner - 20
+RC-Master - 50
+RC-Champion - 75
+
+Requirement RC-Titles:
+OU-Beginner - 15
+OU-MAESTRO - 25
+OU-Specialist - 35
+OU-Conqueror - 50
+
+Wild-Beginner - 15
+Wild-MAESTRO - 25
+Wild-Specialist - 35
+Wild-Conqueror - 50
+
+Requirement Trainer:
+Super Trainer - 25
+Myth Trainer - 25
+Cool Trainer - 35
+Sky Trainer - 20
+Boss - 35
+Beginning Trainer - 10
+Jr. Trainer - 15
+
+Requirement Battle Chateau
+Grand Duke - 45
+Grand Duchess - 45
+Duke - 35
+Douchess - 35
+Earl - 30
+Countess - 30
+Viscount - 25
+Viscountess - 25
+Baron - 20
+Baroness - 20
+
+Requirement Symbols
+
+PurpleHeart
+Pink Heart
+Dark Red Heart
+Blue Heart
+Dark Cyan Heart
+Lime Green Heart
+Yellow Heart
+
+Requirement Silly Titles
+Pro - 40
+Skilled - 25
+Seasoned - 25
+Savvy - 15
+Scarred - 15
+Meme God - 25
+
+Requirement Battle Titles
+Great Lord - 45
+War Lord - 45
+Champion - 45
+
+Tactician - 40
+Major - 40
+Captain - 40
+
+Master - 35
+Striker - 35
+Smasher - 35
+
+Battle Legend - 35
+League Champ - 35
+Renegade - 35
+
+Lord - 30
+Conqueror - 30
+General - 30
+
+Grand Marshal - 30
+Grand Master - 30
+Battle Master - 30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
