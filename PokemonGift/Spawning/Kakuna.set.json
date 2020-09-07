@@ -1,0 +1,32 @@
+{
+  "id": "Kakuna",
+  "spawnInfos": [
+    {
+      "spec": {
+        "name": "Kakuna"
+      },
+      "stringLocationTypes": [
+        "Land",
+        "Tree Top",
+        "Headbutt",
+        "Sweet Scent"
+      ],
+      "minLevel": 7,
+      "maxLevel": 10,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "AFTERNOON",
+          "DUSK"
+        ],
+        "stringBiomes": [
+          "birches",
+          "flowery",
+          "forests",
+          "taigas"
+        ]
+      },
+      "rarity": 130.0
+    }
+  ]
+}

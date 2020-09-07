@@ -1,0 +1,30 @@
+{
+  "id": "Articuno",
+  "spawnInfos": [
+    {
+      "spec": {
+        "name": "Articuno",
+        "form": 2,
+        "level": 70
+      },
+      "stringLocationTypes": [
+        "Air"
+      ],
+      "tags": [
+        "legendary"
+      ],
+      "interval": "legendary",
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAWN",
+          "DUSK"
+        ],
+        "stringBiomes": [
+          "freezing mountains"
+        ]
+      },
+      "rarity": 0.1
+    }
+  ]
+}

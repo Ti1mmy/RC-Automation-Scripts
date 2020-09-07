@@ -1,0 +1,29 @@
+{
+  "id": "Magearna",
+  "spawnInfos": [
+    {
+      "spec": {
+        "name": "Magearna",
+        "level": 50
+      },
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "tags": [
+        "legendary",
+        "mythical"
+      ],
+      "interval": "legendary",
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "MORNING"
+        ],
+        "stringBiomes": [
+          "mushroom_island"
+        ]
+      },
+      "rarity": 0.3
+    }
+  ]
+}

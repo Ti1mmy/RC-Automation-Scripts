@@ -1,0 +1,26 @@
+{
+  "id": "Boltund",
+  "spawnInfos": [
+    {
+      "spec": {
+        "name": "Boltund"
+      },
+      "stringLocationTypes": [
+        "Land",
+        "Sweet Scent"
+      ],
+      "minLevel": 25,
+      "maxLevel": 40,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "MORNING"
+        ],
+        "stringBiomes": [
+          "savannas"
+        ]
+      },
+      "rarity": 50.0
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Joltik",
+  "spawnInfos": [
+    {
+      "spec": {
+        "name": "Joltik"
+      },
+      "stringLocationTypes": [
+        "Land",
+        "Tree Top"
+      ],
+      "minLevel": 10,
+      "maxLevel": 35,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "jungles"
+        ]
+      },
+      "rarity": 130.0
+    },
+    {
+      "spec": {
+        "name": "Joltik"
+      },
+      "stringLocationTypes": [
+        "Underground"
+      ],
+      "minLevel": 10,
+      "maxLevel": 35,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "jungles"
+        ],
+        "neededNearbyBlocks": [
+          "minecraft:web"
+        ]
+      },
+      "rarity": 20.0
+    }
+  ]
+}

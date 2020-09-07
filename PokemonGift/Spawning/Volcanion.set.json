@@ -1,0 +1,32 @@
+{
+  "id": "Volcanion",
+  "spawnInfos": [
+    {
+      "spec": {
+        "name": "Volcanion",
+        "level": 70
+      },
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "tags": [
+        "legendary",
+        "mythical"
+      ],
+      "interval": "legendary",
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAWN",
+          "DUSK"
+        ],
+        "stringBiomes": [
+          "mutated_desert",
+          "volcanic_island",
+          "nether"
+        ]
+      },
+      "rarity": 0.1
+    }
+  ]
+}

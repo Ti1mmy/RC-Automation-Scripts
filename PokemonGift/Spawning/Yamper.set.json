@@ -1,0 +1,26 @@
+{
+  "id": "Yamper",
+  "spawnInfos": [
+    {
+      "spec": {
+        "name": "Yamper"
+      },
+      "stringLocationTypes": [
+        "Land",
+        "Sweet Scent"
+      ],
+      "minLevel": 7,
+      "maxLevel": 20,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "MORNING"
+        ],
+        "stringBiomes": [
+          "savannas"
+        ]
+      },
+      "rarity": 250.0
+    }
+  ]
+}

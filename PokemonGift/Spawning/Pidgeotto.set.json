@@ -1,0 +1,26 @@
+{
+  "id": "Pidgeotto",
+  "spawnInfos": [
+    {
+      "spec": {
+        "name": "Pidgeotto"
+      },
+      "stringLocationTypes": [
+        "Air",
+        "Headbutt"
+      ],
+      "minLevel": 16,
+      "maxLevel": 36,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAY"
+        ],
+        "stringBiomes": [
+          "forests"
+        ]
+      },
+      "rarity": 90.0
+    }
+  ]
+}

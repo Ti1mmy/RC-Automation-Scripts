@@ -1,0 +1,27 @@
+{
+  "id": "Kirlia",
+  "spawnInfos": [
+    {
+      "spec": {
+        "name": "Kirlia"
+      },
+      "stringLocationTypes": [
+        "Land",
+        "Sweet Scent"
+      ],
+      "minLevel": 20,
+      "maxLevel": 29,
+      "typeID": "pokemon",
+      "condition": {
+        "times": [
+          "DAWN",
+          "DUSK"
+        ],
+        "stringBiomes": [
+          "birches"
+        ]
+      },
+      "rarity": 6.0
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "Arbok",
+  "spawnInfos": [
+    {
+      "spec": {
+        "name": "Arbok"
+      },
+      "stringLocationTypes": [
+        "Land"
+      ],
+      "minLevel": 22,
+      "maxLevel": 50,
+      "typeID": "pokemon",
+      "condition": {
+        "stringBiomes": [
+          "plains",
+          "savannas",
+          "swamps"
+        ]
+      },
+      "rarity": 8.0
+    }
+  ]
+}
