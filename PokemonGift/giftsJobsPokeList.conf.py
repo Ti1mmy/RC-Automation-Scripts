@@ -9,6 +9,7 @@ with open("types.txt", "r", encoding="utf8") as File4:
     types = File4.read().split('\n')
 info = []
 weights = []
+total_odds = 0
 for filename in os.listdir("Spawning"):
     content = open(os.path.join('Spawning', filename), "r", encoding="utf8")
     contents = content.read().split('\n')
@@ -65,6 +66,7 @@ pool.append('        randomspawn {')
 #     index += 1
 pool.append("        # StartUltraRare")
 for poke in ultra_rare:
+    total_odds += poke[-2] * 20
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-2] * 20}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]}"')
@@ -72,6 +74,7 @@ for poke in ultra_rare:
     index += 1
 pool.append("        # StartVeryRare")
 for poke in very_rare:
+    total_odds += poke[-2] * 20
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-2] * 20}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]}"')
@@ -79,6 +82,7 @@ for poke in very_rare:
     index += 1
 pool.append("        # StartRare")
 for poke in rare:
+    total_odds += poke[-2] * 20
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-2] * 20}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]}"')
@@ -86,6 +90,7 @@ for poke in rare:
     index += 1
 pool.append("        # StartUncommon")
 for poke in uncommon:
+    total_odds += poke[-2] * 20
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-2] * 20}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]}"')
@@ -93,6 +98,7 @@ for poke in uncommon:
     index += 1
 pool.append("        # StartCommon")
 for poke in common:
+    total_odds += poke[-2] * 20
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-2] * 20}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]}"')
@@ -101,6 +107,7 @@ for poke in common:
 # Shiny
 pool.append("        # StartUltraRare_S")
 for poke in ultra_rare:
+    total_odds += poke[-2] * 20
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-2]}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]} shiny"')
@@ -108,6 +115,7 @@ for poke in ultra_rare:
     index += 1
 pool.append("        # StartVeryRare_S")
 for poke in very_rare:
+    total_odds += poke[-2] * 20
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-2]}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]} shiny"')
@@ -115,6 +123,7 @@ for poke in very_rare:
     index += 1
 pool.append("        # StartRare")
 for poke in rare:
+    total_odds += poke[-2] * 20
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-2]}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]} shiny"')
@@ -122,6 +131,7 @@ for poke in rare:
     index += 1
 pool.append("        # StartUncommon_S")
 for poke in uncommon:
+    total_odds += poke[-2] * 20
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-2]}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]} shiny"')
@@ -129,6 +139,7 @@ for poke in uncommon:
     index += 1
 pool.append("        # StartCommon_S")
 for poke in common:
+    total_odds += poke[-2] * 20
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-2]}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]} shiny"')
@@ -138,3 +149,4 @@ pool.append("        }")
 with open("output.conf", "a", encoding="utf-8") as output:
     for line in pool:
         output.write(f'{line}\n')
+print(total_odds)

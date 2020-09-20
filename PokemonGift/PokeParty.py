@@ -39,6 +39,7 @@ very_rare = []
 rare = []
 uncommon = []
 common = []
+total_odds = 0
 for poke in final_list:
     if "Legendary" in poke:
         legendary.append(poke)
@@ -66,6 +67,7 @@ for poke in legendary:
     index += 1
 pool.append("        # StartUltraRare_&5")
 for poke in ultra_rare:
+    total_odds += poke[-1]
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-1]}')
     pool.append(f'                reward="COMMAND:pokespawncoords {poke[0]} %p%"')
@@ -77,6 +79,7 @@ for poke in ultra_rare:
     index += 1
 pool.append("        # StartVeryRare_&9")
 for poke in very_rare:
+    total_odds += poke[-1]
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-1]}')
     pool.append(f'                reward="COMMAND:pokespawncoords {poke[0]} %p%"')
@@ -88,6 +91,7 @@ for poke in very_rare:
     index += 1
 pool.append("        # StartRare_&2")
 for poke in rare:
+    total_odds += poke[-1]
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-1]}')
     pool.append(f'                reward="COMMAND:pokespawncoords {poke[0]} %p%"')
@@ -99,6 +103,7 @@ for poke in rare:
     index += 1
 pool.append("        # StartUncommon_&2")
 for poke in uncommon:
+    total_odds += poke[-1]
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-1]}')
     pool.append(f'                reward="COMMAND:pokespawncoords {poke[0]} %p%"')
@@ -110,6 +115,7 @@ for poke in uncommon:
     index += 1
 pool.append("        # StartCommon_&7")
 for poke in common:
+    total_odds += poke[-1]
     pool.append(f'            "{index}" ' + '{')
     pool.append(f'                chance={poke[-1]}')
     pool.append(f'                reward="COMMAND:pokespawncoords {poke[0]} %p%"')
@@ -123,3 +129,4 @@ pool.append("        }")
 with open("output.conf", "a", encoding="utf-8") as output:
     for line in pool:
         output.write(f'{line}\n')
+print(total_odds)
