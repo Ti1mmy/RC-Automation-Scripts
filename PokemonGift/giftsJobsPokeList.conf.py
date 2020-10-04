@@ -66,33 +66,33 @@ pool.append('        randomspawn {')
 #     index += 1
 pool.append("        # StartUltraRare")
 for poke in ultra_rare:
-    total_odds += poke[-2] * 20
+    total_odds += poke[-2] * 40
     pool.append(f'            "{index}" ' + '{')
-    pool.append(f'                chance={poke[-2] * 20}')
+    pool.append(f'                chance={poke[-2] * 40}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]}"')
     pool.append('            }')
     index += 1
 pool.append("        # StartVeryRare")
 for poke in very_rare:
-    total_odds += poke[-2] * 20
+    total_odds += poke[-2] * 40
     pool.append(f'            "{index}" ' + '{')
-    pool.append(f'                chance={poke[-2] * 20}')
+    pool.append(f'                chance={poke[-2] * 40}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]}"')
     pool.append('            }')
     index += 1
 pool.append("        # StartRare")
 for poke in rare:
-    total_odds += poke[-2] * 20
+    total_odds += poke[-2] * 40
     pool.append(f'            "{index}" ' + '{')
-    pool.append(f'                chance={poke[-2] * 20}')
+    pool.append(f'                chance={poke[-2] * 40}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]}"')
     pool.append('            }')
     index += 1
 pool.append("        # StartUncommon")
 for poke in uncommon:
-    total_odds += poke[-2] * 20
+    total_odds += poke[-2] * 40
     pool.append(f'            "{index}" ' + '{')
-    pool.append(f'                chance={poke[-2] * 20}')
+    pool.append(f'                chance={poke[-2] * 40}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]}"')
     pool.append('            }')
     index += 1
@@ -100,7 +100,7 @@ pool.append("        # StartCommon")
 for poke in common:
     total_odds += poke[-2] * 20
     pool.append(f'            "{index}" ' + '{')
-    pool.append(f'                chance={poke[-2] * 20}')
+    pool.append(f'                chance={poke[-2] * 40}')
     pool.append(f'                reward="COMMAND:pokemonbattle %p% {poke[0]}"')
     pool.append('            }')
     index += 1
